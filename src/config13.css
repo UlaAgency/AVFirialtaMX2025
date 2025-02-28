@@ -142,7 +142,7 @@ body {
 }
 
 .special-navigation {
-   @apply absolute bottom-[140px] left-4 w-[68%] z-40;
+   @apply absolute bottom-[140px] left-4 w-[68%] z-30;
 }
 
 .special-nav-list {
