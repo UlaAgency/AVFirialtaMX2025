@@ -10,10 +10,9 @@
 let global = {
    slides: [],
    currentSlideIndex: 0,
-   currentSpecialNav: 0,
+   currentSpecialNav: 1 ,
 
    renderNavigation: function () {
-
       // Renderizar navegación del header
       const headerNavList = document.querySelector('#header-nav .nav-list');
       if (headerNavList && veeva.navigationHeader) {
@@ -93,9 +92,10 @@ let global = {
       // Renderizar navegación special
       const specialNavList = document.querySelector('#special-nav .special-nav-list');
       let contenidoSlide = document.querySelector('.contenido img');
+      let carusel_btn = document.querySelector('.pop-carusel-btn');
       if (!contenidoSlide) {
-   console.error('No se pudo encontrar el elemento de imagen');
-}
+         console.error('No se pudo encontrar el elemento de imagen');
+      }
       if(specialNavList && veeva.navigationMenu) {
          specialNavList.innerHTML = '';
          veeva.navigationslide13.forEach(item => {
@@ -111,26 +111,31 @@ let global = {
                if (item.goToSlide === "fn_estudio") {
                   global.currentSpecialNav = 1;
                   contenidoSlide.src = "images/contenido.png";
+                  carusel_btn.classList.remove('hidden');
+                  global.initCarusel();
                }
                if (item.goToSlide === "fn_medicamentos") {
                   global.currentSpecialNav = 2;
                   contenidoSlide.src = "images/contenido2.png";
+                  carusel_btn.classList.add('hidden');
+
                }
                if (item.goToSlide === "fn_reduccion") {
                   global.currentSpecialNav = 3;
                   contenidoSlide.src = "images/contenido3.png";
+                  global.initCarusel();
                }
                if (item.goToSlide === "fn_seguridad") {
                   global.currentSpecialNav = 4;
                   contenidoSlide.src = "images/contenido4.png";
+                  carusel_btn.classList.add('hidden');
                }
             });
             li.appendChild(a);
             specialNavList.appendChild(li);
          });
-         this.initCarusel();
       }
-
+      this.initCarusel();
    },
 
    togleMenu: function () {
@@ -147,7 +152,7 @@ let global = {
       const popConten = document.querySelector('#pop-ref .pop-content img')
       const pop_close_btn = document.querySelector('.footer-nav-item:nth-child(5)');
       if (global.currentSpecialNav === 1) {
-         popConten.src = "images/referencias1.png";
+         popConten.src = "images/referencia1.png";
       } else if (global.currentSpecialNav === 2) {
          popConten.src = "images/referencias2.png";
       } else if (global.currentSpecialNav === 3) {
@@ -166,19 +171,16 @@ let global = {
       this.slides = [];
       let totalSlides = 0;
       if (veeva.slide === "13") {
-         console.log('si señor', global.currentSpecialNav);
          if (global.currentSpecialNav === 1) {
             totalSlides = veeva.navigationslide13[0].carusel || 0;
             this.slides.push('images/pop1.png');
+            this.updateCarusel()
          }
-         else if(global.currentSpecialNav === 2) {
-            this.slides.push('images/contenido2.png');
-         }
-         else if(global.currentSpecialNav === 3) {
-            this.slides.push('images/contenido3.png');
-         }
-         else if(global.currentSpecialNav === 4) {
-            this.slides.push('images/contenido4.png');
+         else if (global.currentSpecialNav === 3) {
+            totalSlides = veeva.navigationslide13[1].carusel || 0;
+            this.slides.push('images/pop2.png');
+            this.slides.push('images/pop3.png');
+            this.updateCarusel()
          }
       }
       else {
