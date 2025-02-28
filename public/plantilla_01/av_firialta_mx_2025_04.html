@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+   <meta name="format-detection" content="telephone=no" />
+   <meta name="msapplication-tap-highlight" content="no" />
+   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón - Desarrollador Front-end' />
+   <meta name="description" content="Un abordaje temprano dará a sus pacientes con ERC y DT2 una óptima protección Cardio Renal" />
+
+   <title></title>
+
+   <link rel="icon" type="image/ico" href="images/icon.png" />
+
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/render.js" defer></script>
+   <script src="js/script.js" defer></script>
+</head>
+<body class="w-screen h-screen">
+   <section class="slide animate-fade animate-duration-[1500ms] animate-delay-500 animate-ease-out">
+
+
+      <div class="contenido">
+         <img src="images/contenido.png" alt="contenido">
+      </div>
+
+      <div class="pop-ref hidden place-items-center" id="pop-ref">
+         <div class="pop-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="cerrar-btn" onclick="global.togleReferences()">
+               <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" />
+            </svg>
+            <img src="images/pop-ref.png" alt="pop-referencias">
+         </div>
+      </div>
+
+      <nav id="header-nav" class="header-navigation">
+         <ul class="nav-list"></ul>
+      </nav>
+
+      <nav id="menu-nav" class="menu-navigation hidden">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="cerrar-btn" onclick="global.togleMenu()">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" />
+         </svg>
+         <ul class="menu-nav-list"></ul>
+      </nav>
+
+      <nav id="footer-nav" class="footer-navigation">
+         <ul class="footer-nav-list"></ul>
+      </nav>
+
+   </section>
+</body>
+</html>

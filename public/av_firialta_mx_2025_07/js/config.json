@@ -1,0 +1,137 @@
+{
+  "zipName": "av_firialta_mx_2025_",
+  "presentationCode": "00012400",
+  "slide": "07",
+  "carusel": 3,
+  "navigationHeader": [
+    {
+      "name": "Albuminuria",
+      "goToSlide": "02",
+      "active": false
+    },
+    {
+      "name": "Mecanismo de la Enfermedad Cardio Renal",
+      "goToSlide": "03",
+      "active": false
+    },
+    {
+      "name": "Diseño y Población de los Estudios",
+      "goToSlide": "04",
+      "active": false
+    },
+    {
+      "name": "Eficacia",
+      "goToSlide": "05",
+      "active": false
+    },
+    {
+      "name": "Recomendaciones en Guías",
+      "goToSlide": "08",
+      "active": false
+    },
+    {
+      "name": "Seguridad",
+      "goToSlide": "09",
+      "active": false
+    },
+    {
+      "name": "Dosificación",
+      "goToSlide": "11",
+      "active": false
+    }
+  ],
+  "navigationFooter": [
+    {
+      "name": "Menú",
+      "goToSlide": "fn_menu",
+      "active": false
+    },
+    {
+      "name": "IPP",
+      "goToSlide": "fn_link('https://www.docuniverse.mx/contenidos/44acdfaf-8a4f-4d9c-8f5a-30e1311408df.', '_blank')",
+      "active": false
+    },
+    {
+      "name": "Características del Producto",
+      "goToSlide": "12",
+      "active": false
+    },
+    {
+      "name": "Evidencia en Vida Real",
+      "goToSlide": "13",
+      "active": false
+    },
+    {
+      "name": "Referencias",
+      "goToSlide": "fn_referencias",
+      "active": false
+    },
+    {
+      "name": "Perfiles de Pacientes",
+      "goToSlide": "14",
+      "active": false
+    }
+  ],
+  "navigationMenu": [
+    {
+      "name": "Página de inicio",
+      "goToSlide": "01",
+      "active": false
+    },
+    {
+      "name": "Albuminuria",
+      "goToSlide": "02",
+      "active": false
+    },
+    {
+      "name": "Mecanismo de la Enfermedad Cardio Renal",
+      "goToSlide": "03",
+      "active": false
+    },
+    {
+      "name": "Diseño y Población de los Estudios",
+      "goToSlide": "04",
+      "active": false
+    },
+    {
+      "name": "Eficacia",
+      "goToSlide": "05",
+      "active": false
+    },
+    {
+      "name": "Criterio de valoración primario CV del estudio FIGARO-DKD",
+      "goToSlide": "05",
+      "active": false
+    },
+    {
+      "name": "Criterios de valoración exploratorios de los estudios FIGARO-DKD y FIDELIO-DKD",
+      "goToSlide": "06",
+      "active": false
+    },
+    {
+      "name": "Criterios de valoración exploratorios de los estudios FIGARO-DKD y FIDELIO-DKD",
+      "goToSlide": "07",
+      "active": true
+    },
+    {
+      "name": "Recomendaciones en Guías",
+      "goToSlide": "08",
+      "active": false
+    },
+    {
+      "name": "Seguridad",
+      "goToSlide": "09",
+      "active": false
+    },
+    {
+      "name": "Dosificación",
+      "goToSlide": "11",
+      "active": false
+    },
+    {
+      "name": "Perfiles de Pacientes",
+      "goToSlide": "14",
+      "active": false
+    }
+  ]
+}
