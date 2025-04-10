@@ -123,6 +123,7 @@ let global = {
                if (item.goToSlide === "fn_reduccion") {
                   global.currentSpecialNav = 3;
                   contenidoSlide.src = "images/contenido3.png";
+                  carusel_btn.classList.remove('hidden');
                   global.initCarusel();
                }
                if (item.goToSlide === "fn_seguridad") {
@@ -154,11 +155,11 @@ let global = {
       if (global.currentSpecialNav === 1) {
          popConten.src = "images/referencia1.png";
       } else if (global.currentSpecialNav === 2) {
-         popConten.src = "images/referencias2.png";
+         popConten.src = "images/referencia2.png";
       } else if (global.currentSpecialNav === 3) {
-         popConten.src = "images/referencias3.png";
+         popConten.src = "images/referencia3.png";
       } else if (global.currentSpecialNav === 4) {
-         popConten.src = "images/referencias4.png";
+         popConten.src = "images/referencia4.png";
       }
       if (pop) {
          pop.classList.toggle('hidden');
@@ -174,13 +175,11 @@ let global = {
          if (global.currentSpecialNav === 1) {
             totalSlides = veeva.navigationslide13[0].carusel || 0;
             this.slides.push('images/pop1.png');
-            this.updateCarusel()
          }
          else if (global.currentSpecialNav === 3) {
             totalSlides = veeva.navigationslide13[1].carusel || 0;
             this.slides.push('images/pop2.png');
             this.slides.push('images/pop3.png');
-            this.updateCarusel()
          }
       }
       else {
@@ -189,13 +188,13 @@ let global = {
             this.slides.push(`images/pop${i}.png`);
          }
       }
-      console.log(this.slides);
-      console.log(`Carrusel inicializado con ${this.slides.length} imágenes`);
-      this.updateButtonVisibility();
+      this.updateCarusel()
    },
 
    togleCarrusel: function () {
       const pop = document.querySelector('#pop-carusel');
+      this.currentSlideIndex = 0;
+      this.updateCarusel();
       if (pop) {
          pop.classList.toggle('hidden');
          pop.classList.toggle('grid');
@@ -217,9 +216,11 @@ let global = {
       this.updateCarusel();
    },
 
-   updateCarusel: function() {
+   updateCarusel: function () {
       const imgElement = document.querySelector('.pop-carusel .pop-content img');
+      console.log(`Carrusel inicializado con ${this.slides.length} imágenes`);
       if (imgElement && this.slides.length > 0) {
+         console.log(this.slides, this.currentSlideIndex);
          console.log(this.slides[this.currentSlideIndex]);
          imgElement.src = this.slides[this.currentSlideIndex];
       }
