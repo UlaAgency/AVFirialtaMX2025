@@ -11,7 +11,7 @@ let global = {
    slides: [],
    currentSlideIndex: 0,
    currentSpecialNav: 1,
-   contenidos: 5,
+   contenidos: 6,
    currentContenido: 1,
 
    renderContenido: function () {

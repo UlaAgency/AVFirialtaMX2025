@@ -30,13 +30,13 @@ const navigationHeaderBase = [
       "active": false
    },
    {
-      "name": "Estudio CONFIDENCE",
-      "goToSlide": "15",
+      "name": "Recomendaciones en Guías",
+      "goToSlide": "08",
       "active": false
    },
    {
-      "name": "Recomendaciones en Guías",
-      "goToSlide": "08",
+      "name": "Estudio CONFIDENCE",
+      "goToSlide": "15",
       "active": false
    },
    {
@@ -124,12 +124,12 @@ const navigationMenuBase = [
       "active": false
    },
    {
-      "name": "Criterios de valoración exploratorios de los estudios FIGARO-DKD y FIDELIO-DKD",
+      "name": "Criterio de valoración primario renal del estudio FIDELIO-DKD",
       "goToSlide": "06",
       "active": false
    },
    {
-      "name": "Criterios de valoración exploratorios de los estudios FIGARO-DKD y FIDELIO-DKD",
+      "name": "Criterios de valoración exploratorios de los estudios FIGARO-DKD y FIDELIODKD",
       "goToSlide": "07",
       "active": false
    },
