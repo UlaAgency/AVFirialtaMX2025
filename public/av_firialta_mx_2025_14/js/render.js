@@ -112,16 +112,17 @@ let global = {
 
    togleAcordion: function (element) {
       const clickedIndex = Array.from(element.parentNode.children).indexOf(element);
-      // debugger;
+      let content = document.querySelector('.contenido img');
+      console.log('imagen', clickedIndex);
       if (element.classList.contains('close')) {
-         console.log('abrir', clickedIndex);
+         content.src = `images/contenido${clickedIndex + 1}.png`;
          for (let i = clickedIndex; i <= element.parentNode.children.length; i--) {
-            element.parentNode.children[i].classList.remove('close');
-            element.parentNode.children[i].classList.add('open');
+            element.parentNode.children[i].classList.remove("close");
+            element.parentNode.children[i].classList.add("open");
          }
       } else {
-         console.log('open', clickedIndex);
          for (let i = element.parentNode.children.length - 1; i >= clickedIndex; i--) {
+            content.src = `images/contenido${clickedIndex}.png`;
             if (element.parentNode.children[i].classList.contains('open')) {
                element.parentNode.children[i].classList.remove('open');
                element.parentNode.children[i].classList.add('close');
