@@ -1,0 +1,166 @@
+@import './fonts.css';
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@theme {
+   --font-firialta: "Firialta";
+}
+
+* {
+   @apply select-none;
+}
+
+html,
+body {
+   @apply bg-gray-900;
+}
+
+
+.slide{
+   @apply w-[1024px] h-[768px] relative bg-white overflow-hidden;
+}
+
+.header-navigation {
+   @apply absolute top-0 left-0 w-full z-50;
+}
+
+.nav-list {
+   @apply grid grid-cols-8 gap-x-0.5 justify-center items-center list-none p-0 m-0;
+}
+
+.nav-item {
+   @apply w-full h-full flex items-center cursor-pointer justify-center leading-none text-center p-2 bg-rose-700 border-b-3 border-stone-300;
+}
+
+.nav-item a {
+   @apply text-white text-center text-sm font-firialta font-bold leading-none;
+}
+
+.nav-item.active {
+   @apply bg-stone-300 border-rose-700;
+}
+
+.nav-item.active a {
+   @apply text-rose-700;
+}
+
+.footer-navigation {
+   @apply absolute bottom-0 left-0 w-full z-50;
+}
+
+.footer-nav-list {
+   @apply h-[49px] grid grid-cols-6 gap-x-1 justify-center items-center list-none p-0 m-0;
+}
+
+.footer-nav-item {
+   @apply w-full h-full flex items-center cursor-pointer justify-center leading-none text-center px-8 py-2 bg-zinc-200 border-t-3 border-zinc-200;
+}
+
+.footer-nav-item a {
+   @apply text-zinc-600 text-center text-sm font-firialta font-bold leading-none;
+}
+
+.footer-nav-item.active {
+   @apply bg-zinc-600 border-zinc-600;
+}
+
+.footer-nav-item.active a {
+   @apply text-white;
+}
+
+.menu-navigation {
+   @apply absolute bottom-0 left-0 w-[90%] z-40 bg-white px-16 pb-24 pt-12 mx-[5%] shadow-2xl inset-shadow-sm;
+}
+
+.menu-nav-list {
+   @apply grid grid-flow-col grid-rows-4 gap-x-8 gap-y-2 justify-center items-center list-none p-0 m-0;
+}
+
+.menu-nav-item {
+   @apply w-full h-full flex items-center cursor-pointer justify-start leading-none p-0 bg-zinc-50/10 px-4;
+}
+
+.menu-nav-item a {
+   @apply text-zinc-600 text-left text-sm font-firialta font-bold leading-none;
+}
+.menu-nav-item:nth-child(6) a,
+.menu-nav-item:nth-child(7) a,
+.menu-nav-item:nth-child(8) a {
+   @apply font-normal;
+}
+
+.menu-nav-item.active a {
+   @apply text-rose-700;
+}
+
+.cerrar-btn {
+   @apply absolute top-4 right-4 size-9 text-rose-700 rounded-full shadow cursor-pointer;
+}
+.next-btn {
+   @apply absolute top-1/2 -mt-10 right-1 size-14 text-rose-700 rounded-full cursor-pointer;
+}
+.prev-btn {
+   @apply absolute top-1/2 -mt-10 left-1 size-14 text-rose-700 rounded-full  cursor-pointer;
+}
+
+.contenido {
+   @apply absolute w-full top-[61px];
+}
+.contenido img {
+   @apply w-full h-full object-cover;
+}
+
+.logo-footer {
+   @apply absolute w-full bottom-[50px];
+}
+.logo-footer img {
+   @apply w-full h-full object-cover;
+}
+
+.pop-ref {
+   @apply absolute top-0 left-0 w-full h-full bg-slate-900/65 z-[60] place-items-center;
+}
+.pop-ref .pop-content {
+   @apply w-[90%] h-fit mx-auto relative;
+}
+.pop-ref .pop-content img {
+   @apply w-full h-full object-cover;
+}
+
+
+.pop-carusel-btn {
+   @apply absolute top-[523px] right-[7px] size-16 rounded-full cursor-pointer;
+}
+.pop-carusel {
+   @apply absolute top-0 left-0 w-full h-full bg-slate-900/65 z-[60] place-items-center;
+}
+.pop-carusel .pop-content {
+   @apply w-[95%] h-fit mx-auto relative;
+}
+.pop-carusel .pop-content img {
+   @apply w-full h-full object-cover;
+}
+
+.special-navigation {
+   @apply absolute bottom-[140px] left-4 w-[68%] z-30;
+}
+
+.special-nav-list {
+   @apply grid grid-flow-col gap-x-3 justify-center items-center list-none p-0 m-0;
+}
+
+.special-nav-item {
+   @apply w-fit h-full flex items-center cursor-pointer justify-center leading-none text-center px-4 py-1 border-b-3 border-zinc-200;
+}
+
+.special-nav-item a {
+   @apply text-zinc-600 text-center text-xs font-firialta font-bold leading-none;
+}
+
+.special-nav-item.active {
+   @apply border-rose-700;
+}
+
+.special-nav-item.active a {
+   @apply text-rose-700;
+}

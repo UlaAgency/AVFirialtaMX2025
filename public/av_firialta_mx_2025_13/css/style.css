@@ -323,7 +323,7 @@ html, body {
   margin: calc(var(--spacing) * 0);
   display: grid;
   list-style-type: none;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   align-items: center;
   justify-content: center;
   column-gap: calc(var(--spacing) * 0.5);

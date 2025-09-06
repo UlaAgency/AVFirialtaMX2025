@@ -25,7 +25,7 @@ body {
 }
 
 .nav-list {
-   @apply grid grid-cols-7 gap-x-0.5 justify-center items-center list-none p-0 m-0;
+   @apply grid grid-cols-8 gap-x-0.5 justify-center items-center list-none p-0 m-0;
 }
 
 .nav-item {

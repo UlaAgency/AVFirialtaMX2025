@@ -1,6 +1,6 @@
 {
   "zipName": "av_firialta_mx_2025_",
-  "presentationCode": "00012400",
+  "presentationCode": "00013685",
   "slide": "06",
   "carusel": 3,
   "navigationHeader": [
@@ -22,6 +22,11 @@
     {
       "name": "Eficacia",
       "goToSlide": "05",
+      "active": false
+    },
+    {
+      "name": "Estudio CONFIDENCE",
+      "goToSlide": "15",
       "active": false
     },
     {

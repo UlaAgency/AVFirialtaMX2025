@@ -21,7 +21,8 @@
     "dev11": "npx @tailwindcss/cli -i ./src/config11.css -o ./public/av_firialta_mx_2025_11/css/style.css --watch",
     "dev12": "npx @tailwindcss/cli -i ./src/config12.css -o ./public/av_firialta_mx_2025_12/css/style.css --watch",
     "dev13": "npx @tailwindcss/cli -i ./src/config13.css -o ./public/av_firialta_mx_2025_13/css/style.css --watch",
-    "dev14": "npx @tailwindcss/cli -i ./src/config14.css -o ./public/av_firialta_mx_2025_14/css/style.css --watch"
+    "dev14": "npx @tailwindcss/cli -i ./src/config14.css -o ./public/av_firialta_mx_2025_14/css/style.css --watch",
+    "dev15": "npx @tailwindcss/cli -i ./src/config15.css -o ./public/av_firialta_mx_2025_15/css/style.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.9",

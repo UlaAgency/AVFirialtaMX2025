@@ -30,6 +30,11 @@ const navigationHeaderBase = [
       "active": false
    },
    {
+      "name": "Estudio CONFIDENCE",
+      "goToSlide": "15",
+      "active": false
+   },
+   {
       "name": "Recomendaciones en Guías",
       "goToSlide": "08",
       "active": false
@@ -236,6 +241,10 @@ function getPopValue(slideNumber) {
 
       case 14:
          return 5;
+         break;
+
+      case 15:
+         return 1;
          break;
 
       default:
